@@ -5,3 +5,28 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+users = User.create(
+  [
+    {
+      name: 'mookie',
+    },
+    {
+      name: 'luke',
+    },
+    {
+      name: 'scott',
+    },
+  ]
+)
+
+courses = Course.new(
+  [
+    {
+      name:'timberlin white',
+      rating:68.3,
+      slope: 128
+    }
+  ]
+)
