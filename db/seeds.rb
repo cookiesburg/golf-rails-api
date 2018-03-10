@@ -21,12 +21,22 @@ users = User.create(
   ]
 )
 
-courses = Course.new(
+courses = Course.create(
   [
     {
       name:'timberlin white',
       rating:68.3,
       slope: 128
-    }
+    },
+    {
+      name:'timberlin blue',
+      rating:70,
+      slope: 126
+    },
+    {
+      name:'timberlin black',
+      rating:72,
+      slope: 125
+    },
   ]
 )
