@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
+  get 'scores/index'
+
   namespace :api do
     namespace :v1 do
-      resources :users
+      resources :users do
+        resources :scores
+      end
       resources :courses
     end
   end

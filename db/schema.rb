@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180308183539) do
+ActiveRecord::Schema.define(version: 20180311175358) do
 
   create_table "courses", force: :cascade do |t|
     t.string "name"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20180308183539) do
   end
 
   create_table "scores", force: :cascade do |t|
-    t.integer "score"
+    t.integer "strokes"
     t.float "differential"
     t.integer "user_id"
     t.integer "course_id"
