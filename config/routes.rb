@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  get 'scores/index'
-
   namespace :api do
     namespace :v1 do
+      get 'users/scores' => 'scores#index'
+      get 'users/:id/scores' => 'users#scores'
       resources :users do
         resources :scores
       end

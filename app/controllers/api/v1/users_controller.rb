@@ -25,6 +25,12 @@ module Api::V1
       end
     end
 
+    def scores
+      @user = User.find(params[:id])
+      @scores = @user.scores
+      render json: @scores
+    end
+
     private
 
     def user_params
