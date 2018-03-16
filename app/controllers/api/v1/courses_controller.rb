@@ -1,5 +1,7 @@
 module Api::V1
   class CoursesController < ApplicationController
+    
+
     def index
       @courses = Course.order("created_at DESC")
       render json: @courses
