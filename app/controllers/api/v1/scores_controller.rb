@@ -2,7 +2,6 @@
 module Api::V1
   class ScoresController < ApplicationController
 
-
     def index
       @scores = Score.order("created_at DESC")
       render json: @scores
@@ -20,8 +19,6 @@ module Api::V1
     end
 
     private
-
-
 
     def score_params
       params.require(:score).permit(:strokes, :user_id, :course_id, :differential)
